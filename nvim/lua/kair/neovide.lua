@@ -3,7 +3,7 @@ if vim.g.neovide then
   vim.g.neovide_scale_factor = 1.0
 
   -- Font
-  vim.o.guifont = [[ShureTechMono Nerd Font:h12]]
+  vim.o.guifont = [[ShureTechMono Nerd Font:h13]]
 
   -- Padding
   vim.g.neovide_padding_top = 0
@@ -41,7 +41,7 @@ if vim.g.neovide then
 
   -- Cursor particles
   vim.g.neovide_cursor_vfx_mode = "railgun"
-  
+
   -- Particle opacity
   vim.g.neovide_cursor_vfx_opacity = 200.0
 
