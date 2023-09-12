@@ -2,6 +2,9 @@ if vim.g.neovide then
   -- Scale
   vim.g.neovide_scale_factor = 1.0
 
+  -- Font
+  vim.o.guifont = [[ShureTechMono Nerd Font:h12]]
+
   -- Padding
   vim.g.neovide_padding_top = 0
   vim.g.neovide_padding_bottom = 0
@@ -17,7 +20,7 @@ if vim.g.neovide then
 
   -- Hide mouse when typing
   vim.g.neovide_hide_mouse_when_typing = true
-  
+
   -- Theme
   vim.g.neovide_theme = 'auto'
 
@@ -29,7 +32,7 @@ if vim.g.neovide then
 
   -- Fullscreen
   vim.g.neovide_fullscreen = true
-  
+
   -- Cursor animation length
   vim.g.neovide_cursor_animation_length = 0.10
 
