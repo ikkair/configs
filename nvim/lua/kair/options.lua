@@ -1,9 +1,9 @@
 local options = {
   backup = false,        --Prevent unnecesarry backup file
-  cmdheight = 1,         --CMD below height
+  -- cmdheight = 1,         --CMD below height
   conceallevel = 0,      --To prevent text concealed
   fileencoding = "utf-8",
-  hlsearch = true,       --To prevent unnecesary highlighting
+  hlsearch = false,       --To prevent unnecesary highlighting
   ignorecase = false,    --To ensure accurate search
   mouse = "n",           --Enable mouse in all mode
   pumheight = 10,        --Max number item in popup menu
@@ -42,9 +42,10 @@ vim.cmd([[
     autocmd CmdlineEnter : lua RelativeLineOff()
     autocmd CmdlineLeave : set relativenumber
   augroup END
-  augroup SearchHighlightToggle
-    autocmd CmdlineLeave / set nohlsearch
+  augroup HighlightSearchToggle
+    autocmd!
     autocmd CmdlineEnter / set hlsearch
+    autocmd CmdlineLeave / set nohlsearch
   augroup END
 ]])
 

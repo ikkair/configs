@@ -75,6 +75,25 @@ return {
       })
     })
 
+    cmp.setup.filetype("bash", {
+      sources = cmp.config.sources({
+        { name = 'nvim_lsp' },
+        { name = 'treesitter' },
+        { name = 'buffer' },
+        { name = 'path' },
+        { name = 'luasnip' },
+      })
+    })
+
+    cmp.setup.filetype("http", {
+      sources = cmp.config.sources({
+        { name = 'treesitter' },
+        { name = 'path' },
+        { name = 'buffer' },
+        { name = 'luasnip' },
+      })
+    })
+
     cmp.setup.filetype("lua", {
       sources = cmp.config.sources({
         { name = 'nvim_lsp' },

@@ -30,3 +30,4 @@ keymap("i", "<C-s>", "<Esc>:w<CR>", opts) -- Control+S to save
 
 -- Terminal Mode
 keymap("t", "<ESC>", "<C-\\><C-n>", opts)
+
