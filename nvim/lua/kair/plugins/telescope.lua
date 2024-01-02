@@ -35,7 +35,7 @@ return {
         layout_config = {
           preview_cutoff = 0
         },
-        file_ignore_patterns = { "node_modules/", "git/" },
+        file_ignore_patterns = { "node_modules/", "git/", "package-lock.json" },
       },
     }
     require("telescope").load_extension("projects")

@@ -39,6 +39,7 @@ return {
     vim.keymap.set('n', '<F13>f', ':ToggleTerm direction=float<CR>', opts)
     vim.keymap.set('n', '<F13>v', ':ToggleTerm direction=vertical<CR>', opts)
     vim.keymap.set('n', '<F13>a', ':ToggleTermToggleAll<CR>', opts)
+    vim.keymap.set('t', '<F13><F13>', '<CMD>ToggleTerm<CR>', opts)
   end,
   config = true
 }

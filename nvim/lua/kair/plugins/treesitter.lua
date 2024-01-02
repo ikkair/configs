@@ -16,7 +16,7 @@ return {
     require("nvim-treesitter.configs").setup {
       ensure_installed = { "c", "lua", "vim", "vimdoc", "rust", "typescript", "go", "javascript", "html", "comment",
         "http", "json", "jsonc", "json5", "jsonnet", "php", "regex", "sql", "toml", "bash", "java", "yaml", "dockerfile",
-        "css", "tsx", "gitignore", "kotlin", "make", "haskell", "markdown", "markdown_inline", "xml", "scss", "groovy", "graphql" },
+        "css", "tsx", "gitignore", "kotlin", "make", "haskell", "markdown", "markdown_inline", "xml", "scss", "groovy", "graphql", "kdl", "nix"},
       sync_install = false,
       highlight = {
         enable = true,

@@ -8,7 +8,16 @@ return {
     },
     init = function()
       require("mason").setup()
-      require("mason-lspconfig").setup()
+      require("mason-lspconfig").setup{
+        ensure_installed = {
+          -- languages
+          "lua_ls", "rust_analyzer", "clangd", "gopls", "jdtls", "tsserver",
+          -- web dev
+          "cssls", "cssmodules_ls", "html", "sqlls", "tailwindcss",
+          -- configs
+          "dockerls", "yamlls", "taplo", "rnix", "bashls"
+        }
+      }
 
       -- Global mappings.
       -- See `:help vim.diagnostic.*` for documentation on any of the below functions
@@ -25,6 +34,8 @@ return {
       ]])
 
       local capabilities = require("cmp_nvim_lsp").default_capabilities()
+      capabilities.workspace = capabilities.workspace or {}
+      capabilities.workspace.didChangeWatchedFiles = { dynamicRegistration = true }
       require("mason-lspconfig").setup_handlers{
         function (server_name)
           require("lspconfig")[server_name].setup{

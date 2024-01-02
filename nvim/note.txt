@@ -1,3 +1,0 @@
-tambah vercel.json
-tambah engine ke package.json
-tambah env
