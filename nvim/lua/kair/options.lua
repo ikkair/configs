@@ -22,7 +22,7 @@ local options = {
   tabstop = 2,           --Number of spaces when tab is pressed in normal mode
   cursorline = true,     --To Deactivate Cursorline
   number = true,         --Showing line number
-  relativenumber = true, --Set line number to relative
+  relativenumber = false, --Set line number to relative
   numberwidth = 4,       --Set spaces between line number and code
   signcolumn = "yes",    --To enable error icon beside number line
   wrap = true,           --To prevent wrapping text
@@ -31,17 +31,17 @@ local options = {
   background = "dark",   --Dark Background
 }
 
-function RelativeLineOff()
-  vim.wo.relativenumber = false
-  vim.cmd.redraw()
-end
+-- function RelativeLineOff()
+--   vim.wo.relativenumber = false
+--   vim.cmd.redraw()
+-- end
 
 vim.cmd([[
-  augroup RelativeLineToggle
-    autocmd!
-    autocmd CmdlineEnter : lua RelativeLineOff()
-    autocmd CmdlineLeave : set relativenumber
-  augroup END
+  " augroup RelativeLineToggle
+  "   autocmd!
+  "   autocmd CmdlineEnter : lua RelativeLineOff()
+  "   autocmd CmdlineLeave : set relativenumber
+  " augroup END
   augroup HighlightSearchToggle
     autocmd!
     autocmd CmdlineEnter / set hlsearch
