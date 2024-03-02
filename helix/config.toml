@@ -2,7 +2,7 @@ theme = "tokyonight_storm"
 
 [editor]
 line-number = "relative"
-mouse = false
+mouse = true
 cursorline = true
 bufferline = "always"
 idle-timeout = 0
