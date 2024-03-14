@@ -1,6 +1,5 @@
 if (( $+commands[zellij] )); then
   export ZELLIJ_AUTO_ATTACH=true
-  source $CONFIG_PATH_ZSH/src/plugins/zellij.zsh
   eval "$(zellij setup --generate-auto-start zsh)"
 else
   echo 'zellij: command not found'
