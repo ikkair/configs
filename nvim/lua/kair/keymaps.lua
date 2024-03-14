@@ -17,7 +17,7 @@ keymap("n", "<C-PageDown>", ":bnext<CR>", opts)   -- Change to previous buffer
 keymap("n", "<C-W>", ":bd<CR>", opts)             -- Unload current buffer
 
 -- Input Mode
-keymap("i", "<C-BS>", "<C-w>", opts)             -- Ctrl+Backspace to delete word
+keymap("i", "<C-BS>", "<C-w>", opts) -- Ctrl+Backspace to delete word
 
 -- Visual Mode
 keymap("v", "<Tab>", ">><Esc>gv", opts)   -- Indent selection then select again
@@ -25,4 +25,3 @@ keymap("v", "<S-Tab>", "<<<Esc>gv", opts) -- Reverse indent selection then selec
 
 -- Terminal Mode
 keymap("t", "<ESC>", "<C-\\><C-n>", opts)
-
